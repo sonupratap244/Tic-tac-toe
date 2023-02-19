@@ -1,0 +1,109 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ :root {
+     --orange: orange;
+     --winning-blocks: rgba(97, 91, 91, 0.873);
+ }
+ 
+ nav {
+     background-color: rgb(169, 2, 169);
+     color: white;
+     height: 70px;
+     font-size: 28px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0 12px;
+     font-family: 'Josefin Sans', sans-serif;
+ }
+ 
+ nav ul {
+     list-style: none;
+ }
+ 
+ .container h1 {
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     color: orangered;
+ }
+ 
+ .container button {
+     background-color: orangered;
+     color: white;
+     font-size: large;
+     padding: 10px;
+     border: none;
+     border-radius: 19px;
+ }
+ 
+ .gameboard {
+     background-color: rgb(188, 212, 148);
+     height: 100vh;
+     display: flex;
+     padding-top: 80px;
+     text-align: center;
+     justify-content: center;
+     display: grid;
+     grid-template-rows: repeat(3, 10vw);
+     grid-template-columns: repeat(3, 10vw);
+     color: orangered;
+     font-family: 'Josefin Sans', sans-serif;
+ }
+ 
+ .box {
+     border: 2px solid;
+     font-size: 8vw;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .box:hover {
+     background-color: rgb(168, 145, 189);
+     border: none;
+ }
+ /* .gameInfo {
+     padding: 0 34px;
+ } */
+ 
+ .br-0 {
+     border-right: 0;
+ }
+ 
+ .bl-0 {
+     border-left: 0;
+ }
+ 
+ .bt-0 {
+     border-top: 0;
+ }
+ 
+ .bb-0 {
+     border-bottom: 0;
+ }
+ 
+ @media screen and (max-width:600px) {
+     .gameboard {
+         background-color: rgb(111, 139, 63);
+         height: 80vh;
+         display: grid;
+         grid-template-rows: repeat(3, 25vw);
+         grid-template-columns: repeat(3, 25vw);
+         font-family: 'Josefin Sans', sans-serif;
+     }
+ }
+ 
+ @media screen and (max-width:400px) {
+     .gameboard {
+         grid-template-rows: repeat(3, 30vw);
+         grid-template-columns: repeat(3, 30vw);
+     }
+ }
