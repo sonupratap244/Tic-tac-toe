@@ -1,2 +1,2 @@
 # Tic-tac-toe
-I developed the website in html css javascript.
+Create the Tic-tac-toe game in Html Css Javascript.
